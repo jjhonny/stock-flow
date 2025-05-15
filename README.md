@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StockFlow - Sistema de Gerenciamento de Estoque
 
-## Getting Started
+Um sistema web moderno para controle de entradas e saídas de estoque, desenvolvido com Next.js, React, TypeScript, Tailwind CSS e DaisyUI.
 
-First, run the development server:
+## Características
+
+- 🔐 Sistema de autenticação completo
+- 🌓 Tema claro/escuro
+- 📱 Design responsivo para todas as telas
+- 📦 Gestão de produtos
+- 📋 Controle de entrada e saída de estoque
+- 📊 Dashboard com visão geral
+- 👤 Perfil de usuário personalizável
+- 🏢 Gestão de fornecedores
+
+## Tecnologias Utilizadas
+
+- **Next.js** - Framework React para desenvolvimento web
+- **React** - Biblioteca JavaScript para construção de interfaces
+- **TypeScript** - Superset tipado de JavaScript
+- **Tailwind CSS** - Framework CSS utilitário
+- **DaisyUI** - Componentes para Tailwind CSS
+
+## Instalação
 
 ```bash
+# Clonar o repositório
+git clone https://github.com/seu-usuario/stock-flow.git
+
+# Entrar no diretório
+cd stock-flow
+
+# Instalar dependências
+npm install
+
+# Iniciar o servidor de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Uso
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Após iniciar o servidor de desenvolvimento, acesse `http://localhost:3000` no seu navegador.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Credenciais de demonstração
 
-## Learn More
+- **Email**: admin@example.com
+- **Senha**: password
 
-To learn more about Next.js, take a look at the following resources:
+## Estrutura do Projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/                   # Páginas e layouts Next.js
+├── components/            # Componentes React reutilizáveis
+│   └── ui/                # Componentes de interface
+├── contexts/              # Contextos React (autenticação, tema)
+├── hooks/                 # Hooks personalizados
+└── service/               # Serviços e API
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Capturas de Tela
 
-## Deploy on Vercel
+![Dashboard](screenshots/dashboard.png)
+![Entrada de Estoque](screenshots/entrada-estoque.png)
+![Perfil de Usuário](screenshots/perfil.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Próximas Funcionalidades
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [ ] Relatórios avançados
+- [ ] Exportação para PDF/Excel
+- [ ] Controle de lotes e validade
+- [ ] Aplicativo mobile
+
+## Licença
+
+MIT
